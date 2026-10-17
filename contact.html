@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Location | Surya Pathology Lab, Moshi</title>
+  <meta name="description" content="Contact Surya Pathology Lab: Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune 411062. Call or WhatsApp 9607721244." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="ticker">
+        <span class="ticker-item active"><i class="fa-solid fa-house-medical"></i> Home Sample Collection Available</span>
+        <span class="ticker-item"><i class="fa-solid fa-file-medical"></i> Reports on WhatsApp &amp; Email</span>
+        <span class="ticker-item"><i class="fa-solid fa-vial"></i> Blood · Urine · Sputum · All Hormones</span>
+        <span class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Trained &amp; Hygienic Sample Collection</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+919607721244"><i class="fa-solid fa-phone"></i> 96077 21244</a>
+        <a href="mailto:suryapathology2021@gmail.com" class="hide-sm"><i class="fa-solid fa-envelope"></i> suryapathology2021@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Surya Pathology Lab logo" />
+        <div class="brand-text">
+          <strong>SURYA</strong>
+          <span>PATHOLOGY LAB</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="https://wa.me/919607721244?text=Hello%20Surya%20Pathology%20Lab%2C%20I%20want%20to%20book%20a%20home%20visit." target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-house-medical"></i> Book Home Visit</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+    <div class="mobile-actions">
+      <a href="tel:+919607721244" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a>
+      <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Visit our lab, call us, or book a home visit.</p>
+      <nav class="crumbs"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Contact</span></nav>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contact Us</span>
+        <h2>Book a Test or Home Visit</h2>
+        <p>Fill in the form and it will open WhatsApp with your details already typed in.</p>
+        <a href="tel:+919607721244" class="contact-line"><i class="fa-solid fa-phone"></i><div><small>Call</small>+91 96077 21244</div></a>
+        <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="contact-line"><i class="fa-brands fa-whatsapp"></i><div><small>WhatsApp</small>+91 96077 21244</div></a>
+        <a href="mailto:suryapathology2021@gmail.com" class="contact-line"><i class="fa-solid fa-envelope"></i><div><small>Email</small>suryapathology2021@gmail.com</div></a>
+      </div>
+      <form class="contact-form reveal" id="enquiryForm">
+        <label>Full Name<input type="text" name="name" required placeholder="Your name" /></label>
+        <label>Phone Number<input type="tel" name="phone" required pattern="[0-9+ ]{10,14}" placeholder="10-digit mobile number" /></label>
+        <label>Service
+          <select name="service">
+            <option>Blood Test</option>
+            <option>Urine Test</option>
+            <option>Sputum Test</option>
+            <option>Hormone Test</option>
+            <option>Health Package</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" name="home" id="homeVisit" /> I need home sample collection</label>
+        <label id="addrWrap" class="hidden">Home Address<textarea name="address" rows="2" placeholder="House no., society, area"></textarea></label>
+        <button type="submit" class="btn btn-primary btn-lg"><i class="fa-brands fa-whatsapp"></i> Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+  <!-- ===== LOCATION ===== -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Visit Us</span>
+        <h2>Our Location</h2>
+      </div>
+      <div class="loc-wrap">
+        <div class="loc-card reveal">
+          <h3><i class="fa-solid fa-location-dot"></i> Surya Pathology Lab – Moshi</h3>
+          <p class="addr">Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</p>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919607721244" target="_blank" rel="noopener">WhatsApp Us</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:suryapathology2021@gmail.com">suryapathology2021@gmail.com</a></li>
+            <li><i class="fa-solid fa-house-medical"></i> Home service available</li>
+          </ul>
+          <a href="https://www.google.com/maps/search/?api=1&query=Surya+Pathology+Lab+River+Road+Moshi+Pune+411062" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Map to Surya Pathology Lab" src="https://maps.google.com/maps?q=River%20Road%20Aishwaryam%20Hamara%20Moshi%20Pune%20411062&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container faq-inner">
+      <div class="faq-list">
+        <div class="section-head left reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <details class="reveal" open><summary>Do you provide home sample collection?</summary><p>Yes. Call or WhatsApp 96077 21244 to book, and our collector will visit your home.</p></details>
+        <details class="reveal"><summary>How will I receive my report?</summary><p>We send reports on WhatsApp or email. You can also collect a printed copy from the lab.</p></details>
+        <details class="reveal"><summary>Do I need to fast before a blood test?</summary><p>Some tests, such as fasting sugar and lipid profile, need 10–12 hours of fasting. We'll tell you when you book.</p></details>
+        <details class="reveal"><summary>Which hormone tests do you offer?</summary><p>We offer all major hormone tests, including thyroid (T3, T4, TSH), fertility hormones, insulin and more.</p></details>
+        <details class="reveal"><summary>Do I need a doctor's prescription?</summary><p>Not for most routine tests. If you have a prescription, please share it so we run the right tests.</p></details>
+        <details class="reveal"><summary>Where is the lab located?</summary><p>Shop No. 02, River Road, opposite Aishwaryam Hamara, Moshi, Pune – 411062.</p></details>
+      </div>
+      <aside class="help-card reveal">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Need Help?</h3>
+        <p>Our team is happy to answer your questions.</p>
+        <a href="tel:+919607721244" class="btn btn-light"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="btn btn-light"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:suryapathology2021@gmail.com" class="btn btn-light"><i class="fa-solid fa-envelope"></i> Email Us</a>
+      </aside>
+    </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="brand light">
+          <img src="assets/logo.svg" alt="Surya Pathology Lab logo" />
+          <div class="brand-text"><strong>SURYA</strong><span>PATHOLOGY LAB</span></div>
+        </a>
+        <p>Accurate diagnostics for Moshi and nearby areas, with home sample collection.</p>
+        <div class="socials">
+          <a href="https://wa.me/919607721244" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li>Blood Tests</li><li>Urine Tests</li><li>Sputum Tests</li><li>All Hormone Tests</li><li>Home Collection</li><li>Health Packages</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:suryapathology2021@gmail.com">suryapathology2021@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container fb-inner">
+        <p>© <span id="year"></span> Surya Pathology Lab. All rights reserved.</p>
+        <p><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="floating">
+    <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="fl-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+919607721244" class="fl-call" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+  </div>
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Mobile bottom bar -->
+  <div class="bottom-bar">
+    <a href="tel:+919607721244"><i class="fa-solid fa-phone"></i> Call</a>
+    <a href="https://wa.me/919607721244" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    <a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

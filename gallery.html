@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Surya Pathology Lab, Moshi</title>
+  <meta name="description" content="Photos of Surya Pathology Lab in Moshi, Pune: our laboratory, sample collection and facility." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="ticker">
+        <span class="ticker-item active"><i class="fa-solid fa-house-medical"></i> Home Sample Collection Available</span>
+        <span class="ticker-item"><i class="fa-solid fa-file-medical"></i> Reports on WhatsApp &amp; Email</span>
+        <span class="ticker-item"><i class="fa-solid fa-vial"></i> Blood · Urine · Sputum · All Hormones</span>
+        <span class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Trained &amp; Hygienic Sample Collection</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+919607721244"><i class="fa-solid fa-phone"></i> 96077 21244</a>
+        <a href="mailto:suryapathology2021@gmail.com" class="hide-sm"><i class="fa-solid fa-envelope"></i> suryapathology2021@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Surya Pathology Lab logo" />
+        <div class="brand-text">
+          <strong>SURYA</strong>
+          <span>PATHOLOGY LAB</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="https://wa.me/919607721244?text=Hello%20Surya%20Pathology%20Lab%2C%20I%20want%20to%20book%20a%20home%20visit." target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-house-medical"></i> Book Home Visit</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-actions">
+      <a href="tel:+919607721244" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a>
+      <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Gallery</h1>
+      <p>A look inside our lab.</p>
+      <nav class="crumbs"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Gallery</span></nav>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+
+  <section class="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Gallery</span>
+        <h2>Inside Surya Pathology Lab</h2>
+        <p>A look at our lab, our team and our home collection service.</p>
+      </div>
+      <div class="g-filters reveal">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="lab">Laboratory</button>
+        <button data-filter="collection">Sample Collection</button>
+        <button data-filter="facility">Facility</button>
+      </div>
+      <div class="g-grid" id="gGrid">
+        <figure class="g-item reveal" data-cat="lab">
+          <img src="assets/gallery/photo-1.jpg" alt="Our Laboratory" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-microscope"></i></div>
+          <figcaption>Our Laboratory</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="lab">
+          <img src="assets/gallery/photo-2.jpg" alt="Sample Processing" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-vials"></i></div>
+          <figcaption>Sample Processing</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="collection">
+          <img src="assets/gallery/photo-3.jpg" alt="Blood Collection" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-syringe"></i></div>
+          <figcaption>Blood Collection</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="collection">
+          <img src="assets/gallery/photo-4.jpg" alt="Home Sample Collection" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-house-medical"></i></div>
+          <figcaption>Home Sample Collection</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="lab">
+          <img src="assets/gallery/photo-5.jpg" alt="Testing Equipment" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-flask"></i></div>
+          <figcaption>Testing Equipment</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="facility">
+          <img src="assets/gallery/photo-6.jpg" alt="Patient Waiting Area" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-couch"></i></div>
+          <figcaption>Patient Waiting Area</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="facility">
+          <img src="assets/gallery/photo-7.jpg" alt="Lab Front – River Road, Moshi" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-store"></i></div>
+          <figcaption>Lab Front – River Road, Moshi</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="collection">
+          <img src="assets/gallery/photo-8.jpg" alt="Senior Citizen Care" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-person-cane"></i></div>
+          <figcaption>Senior Citizen Care</figcaption>
+        </figure>
+        <figure class="g-item reveal" data-cat="lab">
+          <img src="assets/gallery/photo-9.jpg" alt="Report Preparation" loading="lazy" onerror="this.parentElement.classList.add('ph')" />
+          <div class="g-ph"><i class="fa-solid fa-file-medical"></i></div>
+          <figcaption>Report Preparation</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lbImg" alt="" />
+    <p id="lbCap"></p>
+  </div>
+
+  <!-- ===== CTA ===== -->
+
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <div>
+        <h2>Need a test today?</h2>
+        <p>Call or WhatsApp us to book a lab visit or a home sample collection.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="tel:+919607721244" class="btn btn-light"><i class="fa-solid fa-phone"></i> 96077 21244</a>
+        <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="brand light">
+          <img src="assets/logo.svg" alt="Surya Pathology Lab logo" />
+          <div class="brand-text"><strong>SURYA</strong><span>PATHOLOGY LAB</span></div>
+        </a>
+        <p>Accurate diagnostics for Moshi and nearby areas, with home sample collection.</p>
+        <div class="socials">
+          <a href="https://wa.me/919607721244" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li>Blood Tests</li><li>Urine Tests</li><li>Sputum Tests</li><li>All Hormone Tests</li><li>Home Collection</li><li>Health Packages</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:suryapathology2021@gmail.com">suryapathology2021@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container fb-inner">
+        <p>© <span id="year"></span> Surya Pathology Lab. All rights reserved.</p>
+        <p><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="floating">
+    <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="fl-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+919607721244" class="fl-call" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+  </div>
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Mobile bottom bar -->
+  <div class="bottom-bar">
+    <a href="tel:+919607721244"><i class="fa-solid fa-phone"></i> Call</a>
+    <a href="https://wa.me/919607721244" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    <a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
