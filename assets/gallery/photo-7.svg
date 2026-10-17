@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cde8ff"/><stop offset="1" stop-color="#9fd2ff"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#bg)"/>
+<circle cx="700" cy="90" r="160" fill="#fff" opacity=".07"/><circle cx="80" cy="560" r="200" fill="#fff" opacity=".06"/>
+
+<circle cx="680" cy="70" r="45" fill="#f7931e"/>
+<rect x="0" y="520" width="800" height="80" fill="#9aa5b1"/><rect x="0" y="510" width="800" height="14" fill="#c9d1da"/>
+<rect x="90" y="110" width="620" height="400" fill="#f5f2ea"/>
+<path d="M60 110 L740 110 L720 80 L80 80 Z" fill="#f15a24"/>
+<rect x="70" y="150" width="660" height="110" rx="8" fill="#2b4c8c"/>
+<text x="400" y="203" font-family="Georgia, serif" font-size="46" font-weight="bold" fill="#fff" text-anchor="middle">SURYA</text>
+<text x="400" y="242" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#fff" text-anchor="middle" letter-spacing="2">PATHOLOGY LAB</text>
+<path d="M110 220 a26 26 0 0 1 52 0 z" fill="#f15a24"/><path d="M638 220 a26 26 0 0 1 52 0 z" fill="#f15a24"/>
+<rect x="130" y="300" width="250" height="210" fill="#bfe3ff"/><rect x="130" y="300" width="250" height="210" fill="none" stroke="#1c3466" stroke-width="8"/><line x1="255" y1="300" x2="255" y2="510" stroke="#1c3466" stroke-width="6"/>
+<rect x="430" y="300" width="240" height="210" fill="#d9eefe"/><rect x="430" y="300" width="240" height="210" fill="none" stroke="#1c3466" stroke-width="8"/>
+<rect x="510" y="360" width="80" height="80" rx="8" fill="#fff"/><rect x="540" y="370" width="20" height="60" fill="#f15a24"/><rect x="520" y="390" width="60" height="20" fill="#f15a24"/>
+
+</svg>

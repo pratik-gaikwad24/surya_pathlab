@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact & Location | Surya Pathology Lab, Moshi</title>
-  <meta name="description" content="Contact Surya Pathology Lab: Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune 411062. Call or WhatsApp 9607721244." />
+  <title>Contact & Branches | Surya Pathology Lab, Moshi & Chikhali</title>
+  <meta name="description" content="Contact Surya Pathology Lab. Main centre: River Road, Moshi, Pune 411062. Sub-centre: Chikhali-Akurdi Road, Chikhali. Open 8 AM to 10 PM. Call or WhatsApp 9607721244." />
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +22,11 @@
         <span class="ticker-item"><i class="fa-solid fa-file-medical"></i> Reports on WhatsApp &amp; Email</span>
         <span class="ticker-item"><i class="fa-solid fa-vial"></i> Blood · Urine · Sputum · All Hormones</span>
         <span class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Trained &amp; Hygienic Sample Collection</span>
+        <span class="ticker-item"><i class="fa-solid fa-location-dot"></i> 2 Branches: Moshi &amp; Chikhali</span>
+        <span class="ticker-item"><i class="fa-solid fa-tags"></i> Offer: Full Body Profile at ₹1,999 · Fever Profile at ₹1,800</span>
       </div>
       <div class="topbar-right">
+        <span class="hide-sm"><i class="fa-regular fa-clock"></i> 8 AM – 10 PM</span>
         <a href="tel:+919607721244"><i class="fa-solid fa-phone"></i> 96077 21244</a>
         <a href="mailto:suryapathology2021@gmail.com" class="hide-sm"><i class="fa-solid fa-envelope"></i> suryapathology2021@gmail.com</a>
       </div>
@@ -71,7 +74,7 @@
   <section class="page-banner">
     <div class="container">
       <h1>Contact Us</h1>
-      <p>Visit our lab, call us, or book a home visit.</p>
+      <p>Visit our Moshi or Chikhali branch, call us, or book a home visit.</p>
       <nav class="crumbs"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Contact</span></nav>
     </div>
   </section>
@@ -86,6 +89,8 @@
         <a href="tel:+919607721244" class="contact-line"><i class="fa-solid fa-phone"></i><div><small>Call</small>+91 96077 21244</div></a>
         <a href="https://wa.me/919607721244" target="_blank" rel="noopener" class="contact-line"><i class="fa-brands fa-whatsapp"></i><div><small>WhatsApp</small>+91 96077 21244</div></a>
         <a href="mailto:suryapathology2021@gmail.com" class="contact-line"><i class="fa-solid fa-envelope"></i><div><small>Email</small>suryapathology2021@gmail.com</div></a>
+        <div class="contact-line"><i class="fa-solid fa-user"></i><div><small>Contact Person</small>Abhilasha Jain</div></div>
+        <div class="contact-line"><i class="fa-regular fa-clock"></i><div><small>Timings (both branches)</small>Every day, 8 AM – 10 PM</div></div>
       </div>
       <form class="contact-form reveal" id="enquiryForm">
         <label>Full Name<input type="text" name="name" required placeholder="Your name" /></label>
@@ -100,6 +105,12 @@
             <option>Other</option>
           </select>
         </label>
+        <label>Preferred Branch
+          <select name="branch">
+            <option>Moshi (Main Centre)</option>
+            <option>Chikhali (Sub-Centre)</option>
+          </select>
+        </label>
         <label class="check"><input type="checkbox" name="home" id="homeVisit" /> I need home sample collection</label>
         <label id="addrWrap" class="hidden">Home Address<textarea name="address" rows="2" placeholder="House no., society, area"></textarea></label>
         <button type="submit" class="btn btn-primary btn-lg"><i class="fa-brands fa-whatsapp"></i> Send Enquiry</button>
@@ -111,22 +122,43 @@
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Visit Us</span>
-        <h2>Our Location</h2>
+        <h2>Our Branches</h2>
+        <p>Visit either branch, open every day from 8 AM to 10 PM.</p>
       </div>
-      <div class="loc-wrap">
-        <div class="loc-card reveal">
-          <h3><i class="fa-solid fa-location-dot"></i> Surya Pathology Lab – Moshi</h3>
-          <p class="addr">Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</p>
-          <ul>
-            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
-            <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919607721244" target="_blank" rel="noopener">WhatsApp Us</a></li>
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:suryapathology2021@gmail.com">suryapathology2021@gmail.com</a></li>
-            <li><i class="fa-solid fa-house-medical"></i> Home service available</li>
-          </ul>
-          <a href="https://www.google.com/maps/search/?api=1&query=Surya+Pathology+Lab+River+Road+Moshi+Pune+411062" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+      <div class="branch-grid">
+        <div class="branch-card main reveal">
+          <div class="branch-map">
+            <iframe title="Map to Surya Pathology Lab, Moshi" src="https://maps.google.com/maps?q=Aishwaryam%20Hamara%20River%20Road%20Moshi%20Pune%20411062&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="branch-body">
+            <span class="branch-tag">Main Centre</span>
+            <h3><i class="fa-solid fa-location-dot"></i> Moshi</h3>
+            <p class="addr">Shop No. 02, River Road, Near Surya Medical, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</p>
+            <ul>
+              <li><i class="fa-regular fa-clock"></i> Open daily, 8 AM – 10 PM</li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
+              <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919607721244" target="_blank" rel="noopener">WhatsApp Us</a></li>
+              <li><i class="fa-solid fa-house-medical"></i> Home sample collection available</li>
+            </ul>
+            <a href="https://www.google.com/maps/search/?api=1&query=Aishwaryam+Hamara+River+Road+Moshi+Pune+411062" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+          </div>
         </div>
-        <div class="map reveal">
-          <iframe title="Map to Surya Pathology Lab" src="https://maps.google.com/maps?q=River%20Road%20Aishwaryam%20Hamara%20Moshi%20Pune%20411062&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="branch-card reveal">
+          <div class="branch-map">
+            <iframe title="Map to Surya Pathology Lab, Chikhali" src="https://maps.google.com/maps?q=Ganesh%20International%20School%20Newale%20Vasti%20Chikhali%20Pune&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="branch-body">
+            <span class="branch-tag">Sub-Centre</span>
+            <h3><i class="fa-solid fa-location-dot"></i> Chikhali</h3>
+            <p class="addr">Near Ganesh International School, Newale Vasti, Chikhali-Akurdi Road, Chikhali, Pune</p>
+            <ul>
+              <li><i class="fa-regular fa-clock"></i> Open daily, 8 AM – 10 PM</li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
+              <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919607721244" target="_blank" rel="noopener">WhatsApp Us</a></li>
+              <li><i class="fa-solid fa-house-medical"></i> Home sample collection available</li>
+            </ul>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ganesh+International+School+Newale+Vasti+Chikhali+Pune" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+          </div>
         </div>
       </div>
     </div>
@@ -144,7 +176,8 @@
         <details class="reveal"><summary>Do I need to fast before a blood test?</summary><p>Some tests, such as fasting sugar and lipid profile, need 10–12 hours of fasting. We'll tell you when you book.</p></details>
         <details class="reveal"><summary>Which hormone tests do you offer?</summary><p>We offer all major hormone tests, including thyroid (T3, T4, TSH), fertility hormones, insulin and more.</p></details>
         <details class="reveal"><summary>Do I need a doctor's prescription?</summary><p>Not for most routine tests. If you have a prescription, please share it so we run the right tests.</p></details>
-        <details class="reveal"><summary>Where is the lab located?</summary><p>Shop No. 02, River Road, opposite Aishwaryam Hamara, Moshi, Pune – 411062.</p></details>
+        <details class="reveal"><summary>Where are your branches?</summary><p><strong>Main Centre (Moshi):</strong> Shop No. 02, River Road, Near Surya Medical, Opp. Aishwaryam Hamara, Moshi, Pune – 411062.<br /><strong>Sub-Centre (Chikhali):</strong> Near Ganesh International School, Newale Vasti, Chikhali-Akurdi Road, Chikhali, Pune.</p></details>
+        <details class="reveal"><summary>What are your timings?</summary><p>Both branches are open every day from 8 AM to 10 PM.</p></details>
       </div>
       <aside class="help-card reveal">
         <i class="fa-solid fa-headset"></i>
@@ -164,7 +197,7 @@
           <img src="assets/logo.svg" alt="Surya Pathology Lab logo" />
           <div class="brand-text"><strong>SURYA</strong><span>PATHOLOGY LAB</span></div>
         </a>
-        <p>Accurate diagnostics for Moshi and nearby areas, with home sample collection.</p>
+        <p>Accurate diagnostics for Moshi, Chikhali and nearby areas, with home sample collection.</p>
         <div class="socials">
           <a href="https://wa.me/919607721244" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -182,7 +215,10 @@
       <div>
         <h4>Contact</h4>
         <ul class="f-contact">
-          <li><i class="fa-solid fa-location-dot"></i> Shop No. 02, River Road, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</li>
+          <li><i class="fa-solid fa-location-dot"></i> <span><strong>Main Centre (Moshi):</strong> Shop No. 02, River Road, Near Surya Medical, Opp. Aishwaryam Hamara, Moshi, Pune – 411062</span></li>
+          <li><i class="fa-solid fa-location-dot"></i> <span><strong>Sub-Centre (Chikhali):</strong> Near Ganesh International School, Newale Vasti, Chikhali-Akurdi Road, Chikhali, Pune</span></li>
+          <li><i class="fa-regular fa-clock"></i> Open daily, 8 AM – 10 PM</li>
+          <li><i class="fa-solid fa-user"></i> Contact: Abhilasha Jain</li>
           <li><i class="fa-solid fa-phone"></i> <a href="tel:+919607721244">+91 96077 21244</a></li>
           <li><i class="fa-solid fa-envelope"></i> <a href="mailto:suryapathology2021@gmail.com">suryapathology2021@gmail.com</a></li>
         </ul>

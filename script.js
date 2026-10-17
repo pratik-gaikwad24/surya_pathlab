@@ -56,6 +56,10 @@ const tests = [
   ["Testosterone", "fa-dna", "Hormone"],
   ["Beta hCG (Pregnancy)", "fa-person-pregnant", "Hormone"],
   ["Iron Studies", "fa-vial", "Blood"],
+  ["C-Reactive Protein (CRP)", "fa-vial", "Fever"],
+  ["Phosphorus Inorganic", "fa-vial", "Blood"],
+  ["Full Body Profile – ₹1,999", "fa-notes-medical", "Package"],
+  ["Essential Fever Profile – ₹1,800", "fa-temperature-high", "Package"],
 ];
 
 const testGrid = document.getElementById("testGrid");
@@ -84,7 +88,7 @@ homeVisit?.addEventListener("change", () => addrWrap.classList.toggle("hidden", 
 document.getElementById("enquiryForm")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const f = e.target;
-  let msg = `Hello Surya Pathology Lab,%0A%0AName: ${encodeURIComponent(f.name.value)}%0APhone: ${encodeURIComponent(f.phone.value)}%0AService: ${encodeURIComponent(f.service.value)}`;
+  let msg = `Hello Surya Pathology Lab,%0A%0AName: ${encodeURIComponent(f.elements.name.value)}%0APhone: ${encodeURIComponent(f.phone.value)}%0AService: ${encodeURIComponent(f.service.value)}%0ABranch: ${encodeURIComponent(f.branch.value)}`;
   if (f.home.checked) msg += `%0AHome collection: Yes%0AAddress: ${encodeURIComponent(f.address.value)}`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, "_blank");
   f.reset();
@@ -122,6 +126,13 @@ if (lightbox) {
     lbImg.src = img.src;
     lbImg.alt = img.alt;
     lbCap.textContent = it.querySelector("figcaption").textContent;
+    lightbox.classList.add("open");
+  }));
+  // Posters on the Services page
+  document.querySelectorAll("img[data-zoom]").forEach((img) => img.addEventListener("click", () => {
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = "";
     lightbox.classList.add("open");
   }));
   const closeLb = () => lightbox.classList.remove("open");
